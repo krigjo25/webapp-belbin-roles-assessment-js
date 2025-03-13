@@ -96,12 +96,12 @@ function updateResults() {
 
     if (highestRole !== null) {
         const roleElement = document.createElement('div');
-        roleElement.classList.add('result-container'); // Add this line to apply the CSS class
+        roleElement.classList.add('result-container');
         const roleIndex = Object.keys(model.roles).indexOf(highestRole);
         roleElement.textContent = `Your role is: ${model.teamModel[roleIndex].name}`;
         const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = model.teamModel[roleIndex].description;
-        roleElement.appendChild(descriptionElement); // Append description to roleElement
+        descriptionElement.innerHTML = model.teamModel[roleIndex].description.join('<br>');
+        roleElement.appendChild(descriptionElement);
         resultsContainer.appendChild(roleElement);
     }
 }

@@ -1,5 +1,3 @@
-// Belbin Role Assignment Model
-
 const model = {
     roles: {
         resourceInvestigator: 0,
@@ -66,39 +64,84 @@ const model = {
     teamModel: [
         {
             name: "Resource Investigator",
-            description: "Outgoing, enthusiastic, and communicative. Explores opportunities and develops contacts."
+            description: [
+                "Uses their inquisitive nature to find ideas to bring back to the team.",
+                "Strengths: Outgoing, enthusiastic. Explores opportunities and develops contacts.",
+                "Allowable weaknesses: Might be over-optimistic, and can lose interest once the initial enthusiasm has passed.",
+                "Don't be surprised to find that: They might forget to follow up on a lead."
+            ]
         },
         {
             name: "Team Worker",
-            description: "Cooperative, perceptive, and diplomatic. Listens and builds relationships."
+            description: [
+                "Helps the team to gel, using their versatility to identify the work required and complete it on behalf of the team.",
+                "Strengths: Co-operative, perceptive and diplomatic. Listens and averts friction.",
+                "Allowable weaknesses: Can be indecisive in crunch situations and tends to avoid confrontation.",
+                "Don't be surprised to find that: They might be hesitant to make unpopular decisions."
+            ]
         },
         {
             name: "Co-Ordinator",
-            description: "Mature, confident, and identifies talent. Clarifies goals and delegates effectively."
+            description: [
+                "Needed to focus on the team's objectives, draw out team members and delegate work appropriately.",
+                "Strengths: Mature, confident, identifies talent. Clarifies goals.",
+                "Allowable weaknesses: Can be seen as manipulative and might offload their own share of the work.",
+                "Don't be surprised to find that: They might over-delegate, leaving themselves little work to do."
+            ]
         },
         {
             name: "Plant",
-            description: "Creative, imaginative, and free-thinking. Generates ideas and solves difficult problems."
+            description: [
+                "Tends to be highly creative and good at solving problems in unconventional ways.",
+                "Strengths: Creative, imaginative, free-thinking, generates ideas and solves difficult problems.",
+                "Allowable weaknesses: Might ignore incidentals, and may be too preoccupied to communicate effectively.",
+                "Don't be surprised to find that: They could be absent-minded or forgetful."
+            ]
         },
         {
             name: "Monitor Evaluator",
-            description: "Strategic and discerning. Sees all options and judges accurately."
+            description: [
+                "Provides a logical eye, making impartial judgements where required and weighs up the team's options in a dispassionate way.",
+                "Strengths: Sober, strategic and discerning. Sees all options and judges accurately.",
+                "Allowable weaknesses: Sometimes lacks the drive and ability to inspire others and can be overly critical.",
+                "Don't be surprised to find that: They could be slow to come to decisions."
+            ]
         },
         {
             name: "Specialist",
-            description: "Dedicated and focused. Brings in-depth knowledge in a key area."
+            description: [
+                "Brings in-depth knowledge of a key area to the team.",
+                "Strengths: Single-minded, self-starting and dedicated. They provide specialist knowledge and skills.",
+                "Allowable weaknesses: Tends to contribute on a narrow front and can dwell on the technicalities.",
+                "Don't be surprised to find that: They overload you with information."
+            ]
         },
         {
             name: "Shaper",
-            description: "Challenging, dynamic, and thrives on pressure. Has the drive to overcome obstacles."
+            description: [
+                "Provides the necessary drive to ensure that the team keeps moving and does not lose focus or momentum.",
+                "Strengths: Challenging, dynamic, thrives on pressure. Has the drive and courage to overcome obstacles.",
+                "Allowable weaknesses: Can be prone to provocation, and may sometimes offend people's feelings.",
+                "Don't be surprised to find that: They could risk becoming aggressive and bad-humoured in their attempts to get things done."
+            ]
         },
         {
             name: "Implementer",
-            description: "Practical, reliable, and efficient. Turns ideas into actions."
+            description: [
+                "Needed to plan a workable strategy and carry it out as efficiently as possible.",
+                "Strengths: Practical, reliable, efficient. Turns ideas into actions and organises work that needs to be done.",
+                "Allowable weaknesses: Can be a bit inflexible and slow to respond to new possibilities.",
+                "Don't be surprised to find that: They might be slow to relinquish their plans in favour of positive changes."
+            ]
         },
         {
             name: "Completer Finisher",
-            description: "Painstaking, conscientious, and anxious. Searches for errors and perfects tasks."
+            description: [
+                "Most effectively used at the end of tasks to polish and scrutinise the work for errors, subjecting it to the highest standards of quality control.",
+                "Strengths: Painstaking, conscientious, anxious. Searches out errors. Polishes and perfects.",
+                "Allowable weaknesses: Can be inclined to worry unduly, and reluctant to delegate.",
+                "Don't be surprised to find that: They could be accused of taking their perfectionism to extremes."
+            ]
         },
     ]
 };
