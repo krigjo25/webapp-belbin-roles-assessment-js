@@ -4,6 +4,7 @@ function render() {
     const app = document.getElementById('app');
     app.innerHTML = `
         <div id="initial-page">
+            <h1 class="headline">Belbin Team Role Assessment</h1>
             <div id="radio-buttons-container"></div>
             <div class="button-container">
                 <button id="submit-button" class="button">Submit</button>
@@ -34,6 +35,9 @@ function generateRadioButtons() {
             questionText.textContent = question;
             questionContainer.appendChild(questionText);
 
+            const sliderContainer = document.createElement('div');
+            sliderContainer.classList.add('slider-container');
+
             const slider = document.createElement('input');
             slider.type = 'range';
             slider.min = -2;  
@@ -44,21 +48,23 @@ function generateRadioButtons() {
             slider.classList.add('slider');
 
             const valueDisplay = document.createElement('span');
-            valueDisplay.textContent = slider.value;
+            valueDisplay.textContent = 'Neutral'; 
             valueDisplay.classList.add('slider-value');
 
+            const labels = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'];
+
             slider.addEventListener('input', () => {
-                valueDisplay.textContent = slider.value;
+                valueDisplay.textContent = labels[parseInt(slider.value) + 2];
             });
 
-            questionContainer.appendChild(slider);
-            questionContainer.appendChild(valueDisplay);
+            sliderContainer.appendChild(slider);
+            sliderContainer.appendChild(valueDisplay);
 
+            questionContainer.appendChild(sliderContainer);
             container.appendChild(questionContainer);
         });
     });
 }
-
 function showResultsPage() {
     updateResults();
     document.getElementById('initial-page').style.display = 'none';
