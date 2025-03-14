@@ -28,3 +28,6 @@ gh repo clone krigjo25/webapp-belbin-roles-assessment-js
 ```sh
 cd webapp-belbin-roles-assessment-js
 ```
+
+Special thanks to 
+[Toorq91](https://github.com/Toorq91) for his effectivitiy, finishing the project on time.
